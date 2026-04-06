@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times de Futebol</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f0f2f5; padding: 30px; }
+        h1 { color: #1a1a2e; margin-bottom: 24px; text-align: center; font-size: 2rem; }
+        h1 span { color: #000000; }
+        table {
+            width: 100%; border-collapse: collapse;
+            background: white; border-radius: 10px;
+            overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        thead { background: #000000; color: white; }
+        th { padding: 14px 16px; text-align: left; font-size: 0.95rem; }
+        td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; }
+        tbody tr:hover { background: #f0fdf4; }
+        .estado {
+            background: #dbeafe; color: #1d4ed8;
+            padding: 2px 10px; border-radius: 999px;
+            font-size: 0.85rem; font-weight: bold;
+        }
+        .vazio { text-align: center; color: #888; padding: 40px; }
+        .total { text-align: right; padding: 12px 16px; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>\s
+    <h1> Times de <span>Futebol</span></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Cadastrado em</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if times %}
+                {% for time in times %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td><strong>{{ time.nome }}</strong></td>
+                    <td>{{ time.cidade }}</td>
+                    <td><span class="estado">{{ time.estado }}</span></td>
+                    <td>{{ time.criado_em|date:"d/m/Y H:i" }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="5" class="vazio">Nenhum time cadastrado ainda.</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+    {% if times %}
+    <p class="total">Total: {{ times|length }} time(s) cadastrado(s)</p>
+    {% endif %}
+</body>
+</html>
