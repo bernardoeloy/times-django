@@ -15,24 +15,6 @@ Projeto web desenvolvido com Django para cadastro e visualização de times de f
 - Listagem de times em página web
 - Filtro e busca no painel Admin
 
-## 🗂️ Estrutura do Projeto
-Projeto web/
-├── venv/
-└── web/
-├── manage.py
-├── Projeto/
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-└── web/
-├── models.py
-├── views.py
-├── urls.py
-├── admin.py
-└── templates/
-└── web/
-└── times.html
-
 ## ⚙️ Como rodar o projeto
 
 **1. Clone o repositório:**
