@@ -1,50 +1,73 @@
-⚽ Times de Futebol — Django
+# ⚽ Times de Futebol — Django
+
 Projeto web desenvolvido com Django para cadastro e visualização de times de futebol.
-🛠️ Tecnologias utilizadas
 
-Python 3.14
-Django 6.0.3
-SQLite
-HTML + CSS
+## 🛠️ Tecnologias utilizadas
 
-📋 Funcionalidades
+- Python 3.14
+- Django 6.0.3
+- SQLite
+- HTML + CSS
 
-Cadastro de times pelo painel Admin do Django
-Listagem de times em página web
-Filtro e busca no painel Admin
+## 📋 Funcionalidades
 
-🗂️ Estrutura do Projeto
+- Cadastro de times pelo painel Admin do Django
+- Listagem de times em página web
+- Filtro e busca no painel Admin
+
+## 🗂️ Estrutura do Projeto
 Projeto web/
 ├── venv/
 └── web/
-    ├── manage.py
-    ├── Projeto/
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── web/
-        ├── models.py
-        ├── views.py
-        ├── urls.py
-        ├── admin.py
-        └── templates/
-            └── web/
-                └── times.html
-⚙️ Como rodar o projeto
-1. Clone o repositório:
-bashgit clone https://github.com/bernardoeloy/times-django.git
-2. Ative o ambiente virtual:
-bash# Windows
+├── manage.py
+├── Projeto/
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── web/
+├── models.py
+├── views.py
+├── urls.py
+├── admin.py
+└── templates/
+└── web/
+└── times.html
+
+## ⚙️ Como rodar o projeto
+
+**1. Clone o repositório:**
+```bash
+git clone https://github.com/bernardoeloy/times-django.git
+```
+
+**2. Ative o ambiente virtual:**
+```bash
 .\venv\Scripts\activate
-3. Instale as dependências:
-bashpip install django
-4. Rode as migrations:
-bashpython manage.py migrate
-5. Crie um superusuário:
-bashpython manage.py createsuperuser
-6. Inicie o servidor:
-bashpython manage.py runserver
-🌐 Acesso
-PáginaURLLista de Timeshttp://127.0.0.1:8000Adminhttp://127.0.0.1:8000/admin
-👤 Autor
-Desenvolvido por Eloy
+```
+
+**3. Instale as dependências:**
+```bash
+pip install django
+```
+
+**4. Rode as migrations:**
+```bash
+python manage.py migrate
+```
+
+**5. Crie um superusuário:**
+```bash
+python manage.py createsuperuser
+```
+
+**6. Inicie o servidor:**
+```bash
+python manage.py runserver
+```
+
+## 🌐 Acesso
+
+| Página | URL |
+|--------|-----|
+| Lista de Times | http://127.0.0.1:8000 |
+| Admin | http://127.0.0.1:8000/admin |
