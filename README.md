@@ -1,21 +1,21 @@
-# ⚽ Times de Futebol — Django
+#  Times de Futebol — Django
 
 Projeto web desenvolvido com Django para cadastro e visualização de times de futebol.
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 - Python 3.14
 - Django 6.0.3
 - SQLite
 - HTML + CSS
 
-## 📋 Funcionalidades
+##  Funcionalidades
 
 - Cadastro de times pelo painel Admin do Django
 - Listagem de times em página web
 - Filtro e busca no painel Admin
 
-## ⚙️ Como rodar o projeto
+##  Como rodar o projeto
 
 **1. Clone o repositório:**
 ```bash
@@ -47,7 +47,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-## 🌐 Acesso
+##  Acesso
 
 | Página | URL |
 |--------|-----|
